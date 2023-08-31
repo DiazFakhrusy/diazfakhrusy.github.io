@@ -1,0 +1,394 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #191825;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-top: 10px;
+}
+.logo{
+    padding-left: 10%;
+    cursor: pointer;
+    transition: .3s;
+    color: #5B8FB9;
+}
+h1 span{
+    color: #B6EADA;
+}
+.navbar {
+    padding-right: 10%;
+}
+.navbar ul li{
+    display: inline-block;;
+    padding: 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #5B8FB9;
+    transition: .3s;
+}
+.navbar ul li a:hover {
+    color: #B6EADA;
+    text-shadow: 0px 1px 3px #5B8FB9 ;
+}
+/* Home */
+
+.home {
+    position: relative;
+    top: 100px;
+   margin-left:10% ;
+}
+.konten-home h1, h3, p{
+    margin-bottom: 10px;
+}
+.konten-home h1{
+    color: white;
+    font-size: 40px;
+}
+.konten-home p{
+    color: white;
+
+}
+.konten-home h3{
+    font-size: 30px;
+}
+.konten-home h3{
+    color: #5B8FB9;
+}
+
+.box-btn a {
+    border-radius: 8px;
+    padding: 10px;
+    color: #B6EADA;
+    background-color: #5B8FB9;
+    position: relative;
+    top: 15px;
+    text-decoration: none;
+    transition: .3s;  
+
+}
+.box-btn a:hover {
+    color: #B6EADA;
+    background: transparent;    
+    border: 1px solid #5B8FB9;
+    box-shadow: 0px 1px 3px #5B8FB9;
+    text-shadow: 0px 1px 2px #5B8FB9;
+}
+
+span a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+span a:hover {
+    text-shadow: 0px 1px 3px  ;
+    color: #5B8FB9;
+}
+.profil{
+   position: absolute;
+   right: 15%;
+   top: 50%;
+}
+.profil img {
+    width: 270px;
+    border-radius:50%;
+}
+section{
+    position: relative;
+}
+
+
+/* About */
+.judul-about{
+   margin-top: 35%;
+   padding-left: 10%;
+   color: #B6EADA;
+   margin-bottom: 20px;
+}
+.judul-about h1 span{
+    color: #5B8FB9;
+}
+.image-about img{
+    float: left;
+    border-radius: 20px;
+    width: 350px;
+    margin-left: 10%;
+    box-shadow: 0 1px 4px 4px #191825;
+    position: relative;
+}
+.content-about  {
+    float: right;
+    width: 50%;
+    color: #B6EADA;
+    margin-top: 70px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+.content-about h3{
+    margin-top: 40px;
+}
+.box-icon2 {
+    display: flex;
+    gap: 10px;
+}
+.box-icon2 a{
+    border-radius: 20%;
+    transition: .3s;
+}
+.box-icon2 a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 1px 3px #5B8FB9;
+}
+
+/* My Hobby */
+.image-hobby{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  
+}
+.judul-hobby h1{
+    color: #B6EADA;
+    margin-top: 60%;
+    margin-left: 10%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.hobby div{
+    position: relative;
+}
+.image-hobby img{
+    width: 350px;
+    border-radius: 20px;
+    transition: .3s;
+    object-fit: cover;
+    position: relative;
+  
+}
+.title-box{
+    content: "";
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 14%;
+    left: 0px;
+    background: linear-gradient(180deg,rgba(0,0,0,0),#000);
+    border-radius: 20px;
+}
+
+.title{
+    color: #B6EADA;
+    position: absolute;
+    left: 15%;
+    bottom: 30%;
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: transparent;
+    transform: translateY(40px);
+    z-index: 2;
+}
+.title:hover{
+    display: block;
+    transform: translateY(0px);
+    font-size: 20px;
+    text-shadow: 0 2px 2px #5B8FB9;
+}
+
+/* Contact */
+.judul-contact h1{
+    color: #B6EADA;
+    position: relative;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+.contact-name p{
+    color: #84A7A1;
+ 
+}
+.contact-email p{
+    color: #84A7A1;
+ 
+}
+.contact-comment p{
+    color: #84A7A1;
+    
+}
+.contact-name #name{
+    width: 70%;
+    height: 15px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: #B6EADA;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.contact-email #email{
+    width: 70%;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #B6EADA;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.contact-comment textarea .pesan{
+    border-radius: 20px;
+}
+.contact div{
+    margin-left: 10%;
+}
+.tombol-kirim .kirim{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px ;
+    margin-left: 70%;
+    font-weight: bold;
+    background-color: #5B8FB9;
+    color: #B6EADA;
+    transition: .3s;
+}
+.tombol-kirim .kirim:hover{
+    background-color: #191825;
+    color: #B6EADA;
+    box-shadow: 0px 1px 3px #5B8FB9;
+    text-shadow: 0px 1px 2px #5B8FB9;
+}
+
+/* Footer */
+.container-footer{
+    background-color: #5B8FB9;
+}
+.footer-judul{
+    color: #191825;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 20px;
+}
+.footer-content{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: #191825;
+    margin-top: 10px;
+ 
+}
+.footer-icon {
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+}
+.footer-icon a{
+    border-radius: 20%;
+    transition: .3s;
+}
+.footer-icon a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 1px 3px #191825;
+}
+.footer-copyright{
+    color: #191825;
+    text-align: center;
+    padding-bottom:20px;
+    background-color: #5B8FB9;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 414px){
+    .header{
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+    }
+    .header .logo h1{
+       position: absolute;
+       left: 24%;
+       font-size: 30px;
+    }
+    .header .navbar ul li {
+      margin-top: 20%;
+      margin-right: 5%;
+      margin-left: -5%;
+      font-size: 13px;
+      justify-content: center;
+    }
+    .home{
+        margin-top: -120px;
+    }
+    .konten-home h1{
+        font-size: 30px;
+    }
+    .konten-home h3{
+        font-size: 25px;
+    }
+    .konten-home p{
+        font-size: 14px;
+    }
+    .profil{
+        position:absolute;
+        left: 26%;
+        top:180%
+    }
+    .profil img{
+        width: 200px
+    }
+    .box-btn{
+         position:absolute;
+        top: 265%;
+        left: 60%
+    }
+    .judul-about{
+        margin-top: 110%;
+        font-size: 15px;
+    }
+    .image-about img{
+        width: 220px
+    }
+    .content-about{
+        padding-right:150px;
+        text-align: start;
+    }
+    .judul-hobby h1{
+        margin-top: 100%
+    }
+    .image-hobby{
+        display: flex;
+        flex-direction:column;
+        margin-left: 10%;
+    }
+    .image-hobby img{
+        width: 300px
+    }
+    .title-box{
+        display: none
+    }
+   
+    .judul-contact{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .contact-name #name{
+        width: 70%;
+    }
+    .contact-email #email{
+        width: 70%;
+    }
+}
